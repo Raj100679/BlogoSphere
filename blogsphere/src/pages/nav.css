@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+header{
+    margin-top: 10px;
+}
+.Nav{
+    background-color: #FF8400;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.title{
+    color: white;
+    margin-left: 10px;
+    font-size: xx-large;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    /* margin: 5px 0px 10px 5px; */
+}
+
+.title:hover{
+    cursor: pointer;
+}
+
+.side{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.login, .or{
+    text-decoration: none;
+    font-size:x-large;
+    color: white;
+    float: left;
+    padding: 0 3px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login:hover{
+    cursor: pointer;
+    color: rgb(58, 119, 181);
+}
+
+.post{
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 20px;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    width: auto;
+    margin: 10px;
+}
+
+.img{
+    width: 100%;
+}
+
+.head{
+    margin: 0;
+    font-size: 1.6rem;
+    margin: 10px;
+}
+
+.content{
+    margin: 10px;
+}
+
+.text{
+    height: 100%;
+}
+
+.info{
+    color: gray;
+    margin: 10px;
+}
