@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-mongoose.connect('mongodb+srv://sujit44:dPaLc1QeSRUPFxOC@cluster0.tqtgrrg.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://kasat:newtonfkU_10@cluster0.ddhcefz.mongodb.net/?retryWrites=true&w=majority');
 
 app.post('/register', async (req,res) => {
     const {username,email,password} = req.body;
@@ -139,7 +139,7 @@ app.put('/post',uploadMid.single('file'), async (req,res) => {
   })
   
 
-app.listen(4000);
+  app.listen(4000, () => {
+    console.log(`Server is running on http://localhost:4000`);
+  });
 
-//dPaLc1QeSRUPFxOC
-//mongodb+srv://sujit44:dPaLc1QeSRUPFxOC@cluster0.tqtgrrg.mongodb.net/?retryWrites=true&w=majority
