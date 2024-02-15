@@ -10,6 +10,7 @@ const cookieParser = require('cookie-parser');
 const multer = require('multer');
 const uploadMid = multer({dest: 'uploads/'});
 const fs = require('fs');
+const PORT=process.env.PORT || 4000
 
 const salt = bcrypt.genSaltSync(10);
 const secret = 'hadsbiukbdjhekhiua';
@@ -139,7 +140,7 @@ app.put('/post',uploadMid.single('file'), async (req,res) => {
   })
   
 
-  app.listen(4000, () => {
-    console.log(`Server is running on http://localhost:4000`);
+  app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
   });
 
